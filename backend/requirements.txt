@@ -1,0 +1,7 @@
+fastapi
+pydantic
+groq
+pandas
+openpyxl
+uvicorn
+python-dotenv
