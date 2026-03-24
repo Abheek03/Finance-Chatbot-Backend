@@ -383,3 +383,8 @@ def clarify(query: ClarifyQuery):
     # Combine the original question with the user's response to form a new, more specific question
     new_question = f"{query.original_question} {query.user_response}"
     return chat(Query(question=new_question))
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
